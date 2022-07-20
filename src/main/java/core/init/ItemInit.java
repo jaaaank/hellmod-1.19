@@ -1,6 +1,7 @@
 package core.init;
 
 import com.jank.hellmod.EnhancedHell;
+import core.custom.ModArmorItem;
 import core.custom.item.GreaterDevilApple;
 import core.custom.item.GreaterDiamondApple;
 import core.custom.item.GreaterEmeraldApple;
@@ -137,16 +138,16 @@ public final class ItemInit {
 	
 			// DEVIL ARMOR
 	public static final RegistryObject<ArmorItem> DEVIL_HELMET = ITEMS.register("devil_helmet",
-			() -> new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.HEAD,
+			() -> new ModArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.HEAD,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 	public static final RegistryObject<ArmorItem> DEVIL_CHESTPLATE = ITEMS.register("devil_chestplate",
-			() -> new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.CHEST,
+			() -> new ArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.CHEST,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 	public static final RegistryObject<ArmorItem> DEVIL_LEGGINGS = ITEMS.register("devil_leggings",
-			() -> new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.LEGS,
+			() -> new ArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.LEGS,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 	public static final RegistryObject<ArmorItem> DEVIL_BOOTS = ITEMS.register("devil_boots",
-			() -> new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.FEET,
+			() -> new ArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.FEET,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 
 	
