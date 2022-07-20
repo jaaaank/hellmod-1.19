@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellmod:crystallized_devil_blood_block"
+    }
+  ],
+  "result": {
+    "item": "hellmod:crystallized_devil_blood",
+    "count": 9
+  }
+}

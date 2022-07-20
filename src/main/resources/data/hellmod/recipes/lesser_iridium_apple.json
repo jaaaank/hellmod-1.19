@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:apple"
+    },
+    "X": {
+      "item": "hellmod:iridium_nugget"
+    }
+  },
+  "result": {
+    "item": "hellmod:lesser_iridium_apple"
+  }
+}

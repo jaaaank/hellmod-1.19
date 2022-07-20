@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hellmod:raw_rust"
+    }
+  },
+  "result": {
+    "item": "hellmod:raw_rust_block"
+  }
+}

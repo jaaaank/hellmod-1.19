@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:apple"
+    },
+    "X": {
+      "item": "hellmod:lapis_chunk"
+    }
+  },
+  "result": {
+    "item": "hellmod:lesser_lapis_apple"
+  }
+}

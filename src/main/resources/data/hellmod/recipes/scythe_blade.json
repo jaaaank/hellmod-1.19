@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "UU ",
+        " U ",
+        "  C"
+    ],
+    "key": {
+        "C": {
+            "item": "hellmod:iridium_ingot"
+        },
+        "U": {
+            "item": "minecraft:iron_ingot"
+        },
+    },
+    "result": {
+        "item": "hellmod:scythe_blade",
+        "count": 1
+    }
+}

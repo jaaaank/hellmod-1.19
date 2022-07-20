@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellmod:sandpaper"
+    },
+    {
+      "item": "hellmod:raw_rust_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft:raw_iron",
+    "count": 8
+  }
+}

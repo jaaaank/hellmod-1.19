@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  B",
+    " BB",
+    "X  "
+  ],
+  "key": {
+    "X": {
+      "item": "hellmod:scythe_handle"
+    },
+    "B": {
+      "item": "hellmod:iridium_ingot"
+    }
+  },
+  "result": {
+    "item": "hellmod:katana",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " LL",
+        " iL",
+        "/  "
+    ],
+    "key": {
+        "i": {
+            "item": "hellmod:iridium_ingot"
+        },
+        "/": {
+            "item": "hellmod:scythe_handle"
+        },
+        "L": {
+            "item": "hellmod:crystallized_devil_blood"
+        }
+    },
+    "result": {
+        "item": "hellmod:pitchfork",
+        "count": 1
+    }
+}

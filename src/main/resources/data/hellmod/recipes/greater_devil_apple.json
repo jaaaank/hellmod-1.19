@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:apple"
+    },
+    "X": {
+      "item": "hellmod:devil_heart"
+    }
+  },
+  "result": {
+    "item": "hellmod:greater_devil_apple"
+  }
+}

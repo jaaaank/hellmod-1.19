@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "key": {
+
+    "X": {
+      "item": "hellmod:iridium"
+    }
+  },
+  "result": {
+    "item": "hellmod:iridium_boots"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "X0X",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:paper"
+    },
+    "0": {
+      "item": "minecraft:magma_cream"
+    },
+    "X": {
+      "item": "minecraft:soul_sand"
+    },
+    "C": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result": {
+    "item": "hellmod:sandpaper",
+    "count": 9
+  }
+}

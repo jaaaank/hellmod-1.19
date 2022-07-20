@@ -1,0 +1,13 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hellmod:coagulated_devil_blood_block"
+        }
+      ]
+    }
+  ]
+}

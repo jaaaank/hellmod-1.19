@@ -1,0 +1,108 @@
+{
+	"item.hellmod.coagulated_devil_blood": "Coagulated Devil Blood",
+	"item.hellmod.chaotic_eye": "Chaotic Eye",
+	"item.hellmod.crystallized_devil_blood": "Crystallized Devil Blood",
+	"item.hellmod.reaper_bone": "Withered Devil Bone",
+	"item.hellmod.raw_rust": "Raw Rusted Iron",
+	
+	"item.hellmod.iridium_helmet": "Iridium Helmet",
+	"item.hellmod.iridium_chestplate": "Iridium Chestplate",
+	"item.hellmod.iridium_leggings": "Iridium Leggings",
+	"item.hellmod.iridium_boots": "Iridium Boots",
+	
+	"item.hellmod.obsidian_helmet": "Obsidian Helmet",
+	"item.hellmod.obsidian_chestplate": "Obsidian Chestplate",
+	"item.hellmod.obsidian_leggings": "Obsidian Leggings",
+	"item.hellmod.obsidian_boots": "Obsidian Boots",
+	
+	"item.hellmod.devil_helmet": "Devil Helmet",
+	"item.hellmod.devil_chestplate": "Devil Chestplate",
+	"item.hellmod.devil_leggings": "Devil Leggings",
+	"item.hellmod.devil_boots": "Devil Boots",
+	
+ 	"item.hellmod.lesser_diamond_apple": "Lesser Diamond Apple",
+ 	"item.hellmod.lesser_iron_apple": "Lesser Iron Apple",
+ 	"item.hellmod.lesser_netherite_apple": "Lesser Netherite Apple",
+ 	"item.hellmod.lesser_lapis_apple": "Lesser Lapis Apple",
+ 	"item.hellmod.lesser_emerald_apple": "Lesser Emerald Apple",
+ 	"item.hellmod.lesser_iridium_apple": "Lesser Iridium Apple",
+ 	"item.hellmod.lesser_golden_apple": "Lesser Golden Apple",
+ 	"item.hellmod.lesser_devil_apple": "Lesser Devil Apple",
+ 	"item.hellmod.lesser_redstone_apple": "Lesser Redstone Apple",
+ 	
+	"item.hellmod.poison_apple": "\u00A72Poison Apple",
+	"item.hellmod.diamond_apple": "\u00A7bDiamond Apple",
+	"item.hellmod.iron_apple": "\u00A77Iron Apple",
+	"item.hellmod.netherite_apple": "\u00A78Netherite Apple",
+	"item.hellmod.lapis_apple": "\u00A71Lapis Apple",
+	"item.hellmod.emerald_apple": "\u00A7aEmerald Apple",
+	"item.hellmod.iridium_apple": "\u00A75Iridium Apple",
+	"item.minecraft.golden_apple": "\u00A76Golden Apple",
+	"item.hellmod.redstone_apple": "\u00A74Redstone Apple",
+	"item.hellmod.devil_apple": "\u00A7cDevil Apple",
+  
+	"item.hellmod.diamond_shard": "Diamond Shard",
+	"item.hellmod.emerald_shard": "Emerald Shard",
+	"item.hellmod.iridium_nugget": "Iridium Nugget",
+	"item.hellmod.lapis_chunk": "Lapis Chunk",
+
+	"item.minecraft.enchanted_golden_apple": "\u00A7dGreater Golden Apple",
+	"item.hellmod.greater_diamond_apple": "\u00A7dGreater Diamond Apple",
+	"item.hellmod.greater_iron_apple": "\u00A7dGreater Iron Apple",
+	"item.hellmod.greater_netherite_apple": "\u00A7dGreater Netherite Apple",
+	"item.hellmod.greater_lapis_apple": "\u00A7dGreater Lapis Apple",
+	"item.hellmod.greater_emerald_apple": "\u00A7dGreater Emerald Apple",
+	"item.hellmod.greater_devil_apple": "\u00A7dGreater Devil Apple",
+	"item.hellmod.greater_iridium_apple": "\u00A7dGreater Iridium Apple",
+	"item.hellmod.greater_redstone_apple": "\u00A7dGreater Redstone Apple",
+	
+	"item.hellmod.dress_shirt": "Dress Sleeves And Tie",
+	"item.hellmod.dress_pants": "Dress Pants And Vest",
+	"item.hellmod.dress_shoes": "Dress Shoes",
+	
+	"item.hellmod.raw_iridium": "Raw Iridium",
+	"item.hellmod.iridium_ingot": "Iridium Ingot",
+	"item.hellmod.iridium_sword": "Iridium Sword",
+	"item.hellmod.iridium_axe": "Iridium Axe",
+	"item.hellmod.iridium_pickaxe": "Iridium Pickaxe",
+	"item.hellmod.iridium_hoe": "Iridium Hoe",
+	"item.hellmod.iridium_shovel": "Iridium Shovel",
+	
+	"item.hellmod.sandpaper": "Sandpaper",
+	
+	"item.hellmod.scythe_handle": "Devil Handle",
+	"item.hellmod.scythe_blade": "Scythe Blade",
+	"item.hellmod.scythe": "Scythe",
+	"item.hellmod.pitchfork": "Pitchfork",
+	"item.hellmod.katana": "Katana",
+	"item.hellmod.demon_pick": "Mattock",
+
+
+
+	"item.hellmod.devil_heart": "Devil Heart",
+	
+	"item.hellmod.chainsaw_blade": "Chainsaw Blade",
+	"item.hellmod.chainsaw_engine": "Chainsaw Engine",
+	"item.hellmod.chainsaw_handle": "Chainsaw Handle",
+	"item.hellmod.chainsaw": "Chainsaw",
+	
+	"item.hellmod.blood_devil_spawn_egg": "Blood Devil Spawn Egg",
+	"item.hellmod.chaos_devil_spawn_egg": "Chaos Devil Spawn Egg",
+	"item.hellmod.reaper_spawn_egg": "Withered Devil Spawn Egg",
+	
+	"block.hellmod.coagulated_devil_blood_block": "Block of Coagulated Devil Blood",
+	"block.hellmod.crystallized_devil_blood_block": "Block of Crystallized Devil Blood",
+	
+	"block.hellmod.rust_ore": "Rusted Iron Ore",
+	"block.hellmod.raw_rust_block": "Block of Raw Rusted Iron",
+	
+	"block.hellmod.iridium_ore": "Iridium Ore",
+	"block.hellmod.raw_iridium_block": "Block of Raw Iridium",
+	"block.hellmod.iridium_block": "Block of Iridium",
+	
+	"entity.hellmod.blood_devil": "Blood Devil",
+	"entity.hellmod.bunker": "Bunker",
+	"entity.hellmod.chaos_devil": "Chaos Devil",
+	"entity.hellmod.reaper": "Withered Devil"
+	
+}

@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iH ",
+        "/ L",
+        "/  "
+    ],
+    "key": {
+        "i": {
+            "item": "hellmod:iridium_ingot"
+        },
+        "H": {
+            "item": "hellmod:devil_heart"
+        },
+        "/": {
+            "item": "hellmod:scythe_handle"
+        },
+        "L": {
+            "item": "hellmod:scythe_blade"
+        }
+    },
+    "result": {
+        "item": "hellmod:scythe",
+        "count": 1
+    }
+}

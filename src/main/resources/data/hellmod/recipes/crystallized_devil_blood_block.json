@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hellmod:crystallized_devil_blood"
+    }
+  },
+  "result": {
+    "item": "hellmod:crystallized_devil_blood_block"
+  }
+}

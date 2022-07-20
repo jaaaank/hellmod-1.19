@@ -1,0 +1,5 @@
+{
+  "type": "hellmod:ores",
+  "biomes": "#minecraft:is_nether",
+  "feature": "hellmod:iridium_ore_placed"
+}

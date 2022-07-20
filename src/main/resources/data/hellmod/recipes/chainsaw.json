@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " XF",
+    "XOB"
+  ],
+  "key": {
+    "X": {
+      "item": "hellmod:chainsaw_handle"
+    },
+    "O": {
+      "item": "hellmod:chainsaw_engine"
+    },
+    "F": {
+      "item": "hellmod:chainsaw_blade"
+    },
+    "B": {
+      "item": "hellmod:iridium_ingot"
+    }
+  },
+  "result": {
+    "item": "hellmod:chainsaw",
+    "count": 1
+  }
+}

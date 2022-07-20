@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "hellmod:blocks/iridium_ore_top",
+    "side": "hellmod:blocks/iridium_ore"
+  }
+}

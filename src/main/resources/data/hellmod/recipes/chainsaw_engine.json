@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "XBD",
+    "XXX"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "hellmod:iridium_ingot"
+    },
+    "D": {
+      "item": "hellmod:coagulated_devil_blood_block"
+    },
+    "B": {
+      "item": "hellmod:devil_heart"
+    }
+  },
+  "result": {
+    "item": "hellmod:chainsaw_engine"
+  }
+}

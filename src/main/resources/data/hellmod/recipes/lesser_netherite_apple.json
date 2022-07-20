@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:apple"
+    },
+    "X": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "item": "hellmod:lesser_netherite_apple"
+  }
+}

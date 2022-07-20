@@ -1,0 +1,5 @@
+{
+  "type": "hellmod:ores",
+  "biomes": "#minecraft:is_nether",
+  "feature": "hellmod:obsidian_ore_placed"
+}

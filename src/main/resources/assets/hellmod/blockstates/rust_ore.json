@@ -1,0 +1,5 @@
+{
+	"variants": {
+		"": { "model": "hellmod:block/rust_ore" }
+	}
+}

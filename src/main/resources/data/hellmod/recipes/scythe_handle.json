@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " #/",
+        "#L#",
+        "/# "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:obsidian"
+        },
+        "L": {
+            "item": "minecraft:blaze_rod"
+        },
+        "/": {
+            "item": "hellmod:reaper_bone"
+        }
+    },
+    "result": {
+        "item": "hellmod:scythe_handle",
+        "count": 1
+    }
+}

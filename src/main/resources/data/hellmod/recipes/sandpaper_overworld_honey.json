@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "X0X",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:paper"
+    },
+    "0": {
+      "item": "minecraft:honeycomb"
+    },
+    "X": {
+      "item": "minecraft:sand"
+    },
+    "C": {
+      "item": "minecraft:flint"
+    }
+  },
+  "result": {
+    "item": "hellmod:sandpaper",
+    "count": 9
+  }
+}

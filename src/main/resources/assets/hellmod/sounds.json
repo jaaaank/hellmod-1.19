@@ -1,0 +1,49 @@
+{
+	"entity.blood_devil.ambient": {
+		"sounds": [
+			"hellmod:blood_devil_ambient_1",
+			"hellmod:blood_devil_ambient_2"
+		]	
+	},
+	
+	"entity.blood_devil.death": {
+		"sounds": [
+			"hellmod:blood_devil_death"
+		]	
+	},
+	
+	"entity.blood_devil.hurt": {
+		"sounds": [
+			"hellmod:blood_devil_hurt_1",
+			"hellmod:blood_devil_hurt_2"
+		]	
+	},
+
+	"entity.reaper.ambient": {
+		"sounds": [
+			"hellmod:reaper_ambient_1",
+			"hellmod:reaper_ambient_2"
+		]	
+	},
+	
+	"entity.reaper.death": {
+		"sounds": [
+			"hellmod:reaper_death"
+		]	
+	},
+
+	"entity.chaos_devil.ambient": {
+		"sounds": [
+			"hellmod:chaos_devil_ambient"
+		]
+	},
+
+	"entity.reaper.hurt": {
+		"sounds": [
+			"hellmod:reaper_hurt_1",
+			"hellmod:reaper_hurt_2"
+		]	
+	}
+
+
+}

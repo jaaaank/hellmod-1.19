@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+	"hellmod:rust_ore",
+	"hellmod:raw_rust_block",
+	"hellmod:raw_iridium_block",
+	"hellmod:iridium_ore",
+	"hellmod:iridium_block"
+	]
+}
