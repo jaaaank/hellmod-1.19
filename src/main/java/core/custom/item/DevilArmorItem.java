@@ -26,7 +26,7 @@ public class DevilArmorItem extends GeoArmorItem implements IAnimatable {
 
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ArmorMaterialInit.DEVIL, new MobEffectInstance(MobEffects.LUCK, 200, 1)).build();
+                    .put(ArmorMaterialInit.DEVIL, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 0)).build();
 
     public DevilArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);
