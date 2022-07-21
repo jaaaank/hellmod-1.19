@@ -17,7 +17,7 @@ public class DevilArmorModel extends AnimatedGeoModel<DevilArmorItem> {
     }
 
     @Override
-    public ResourceLocation getAnimationResource(DevilArmorItem animatable) {
-        return new ResourceLocation(EnhancedHell.MODID, "animations/armor_animation.json");
+    public ResourceLocation getAnimationResource(DevilArmorItem object) {
+        return new ResourceLocation(EnhancedHell.MODID, "animations/armor_animations.json");
     }
 }

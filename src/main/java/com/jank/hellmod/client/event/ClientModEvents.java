@@ -21,8 +21,6 @@ public final class ClientModEvents {
 	public static void registerArmorRenderers(final EntityRenderersEvent.AddLayers event) {
 		GeoArmorRenderer.registerArmorRenderer(DevilArmorItem.class, new DevilArmorRenderer());
 	}
-
-	private ClientModEvents() {}
 	
 	@SubscribeEvent
 	public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
