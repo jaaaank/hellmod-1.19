@@ -1,11 +1,10 @@
 package com.jank.hellmod.client.armor;
 
 import core.custom.item.DevilArmorItem;
-import software.bernie.geckolib3.model.AnimatedGeoModel;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class DevilArmorRenderer extends GeoArmorRenderer<DevilArmorItem> {
-    public DevilArmorRenderer(AnimatedGeoModel<DevilArmorItem> modelProvider) {
+    public DevilArmorRenderer() {
         super(new DevilArmorModel());
 
         this.headBone = "armorHead";

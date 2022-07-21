@@ -2,14 +2,7 @@ package core.init;
 
 import com.jank.hellmod.EnhancedHell;
 import core.custom.ModArmorItem;
-import core.custom.item.GreaterDevilApple;
-import core.custom.item.GreaterDiamondApple;
-import core.custom.item.GreaterEmeraldApple;
-import core.custom.item.GreaterIridiumApple;
-import core.custom.item.GreaterIronApple;
-import core.custom.item.GreaterLapisApple;
-import core.custom.item.GreaterNetheriteApple;
-import core.custom.item.GreaterRedstoneApple;
+import core.custom.item.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -138,19 +131,19 @@ public final class ItemInit {
 	
 			// DEVIL ARMOR
 	public static final RegistryObject<ArmorItem> DEVIL_HELMET = ITEMS.register("devil_helmet",
-			() -> new ArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.HEAD,
+			() -> new DevilArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.HEAD,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 	public static final RegistryObject<ArmorItem> BLOOD_DEVIL_HELMET = ITEMS.register("blood_devil_helmet",
-			() -> new ArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.HEAD,
+			() -> new DevilArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.HEAD,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 	public static final RegistryObject<ArmorItem> DEVIL_CHESTPLATE = ITEMS.register("devil_chestplate",
-			() -> new ArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.CHEST,
+			() -> new DevilArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.CHEST,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 	public static final RegistryObject<ArmorItem> DEVIL_LEGGINGS = ITEMS.register("devil_leggings",
-			() -> new ArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.LEGS,
+			() -> new DevilArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.LEGS,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 	public static final RegistryObject<ArmorItem> DEVIL_BOOTS = ITEMS.register("devil_boots",
-			() -> new ArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.FEET,
+			() -> new DevilArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.FEET,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 
 	

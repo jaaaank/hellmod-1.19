@@ -13,7 +13,7 @@ public class DevilArmorModel extends AnimatedGeoModel<DevilArmorItem> {
 
     @Override
     public ResourceLocation getTextureResource(DevilArmorItem object) {
-        return new ResourceLocation(EnhancedHell.MODID, "textures/models/armor/devil_armor.json");
+        return new ResourceLocation(EnhancedHell.MODID, "textures/models/armor/devil_armor.png");
     }
 
     @Override
