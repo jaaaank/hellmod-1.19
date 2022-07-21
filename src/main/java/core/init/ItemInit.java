@@ -111,7 +111,7 @@ public final class ItemInit {
 
 			// IRIDIUM ARMOR
 	public static final RegistryObject<ArmorItem> IRIDIUM_HELMET = ITEMS.register("iridium_helmet",
-			() -> new ArmorItem(ArmorMaterialInit.IRIDIUM, EquipmentSlot.HEAD,
+			() -> new ModArmorItem(ArmorMaterialInit.IRIDIUM, EquipmentSlot.HEAD,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 	public static final RegistryObject<ArmorItem> IRIDIUM_CHESTPLATE = ITEMS.register("iridium_chestplate",
 			() -> new ArmorItem(ArmorMaterialInit.IRIDIUM, EquipmentSlot.CHEST,
@@ -138,7 +138,10 @@ public final class ItemInit {
 	
 			// DEVIL ARMOR
 	public static final RegistryObject<ArmorItem> DEVIL_HELMET = ITEMS.register("devil_helmet",
-			() -> new ModArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.HEAD,
+			() -> new ArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.HEAD,
+					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
+	public static final RegistryObject<ArmorItem> BLOOD_DEVIL_HELMET = ITEMS.register("blood_devil_helmet",
+			() -> new ArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.HEAD,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 	public static final RegistryObject<ArmorItem> DEVIL_CHESTPLATE = ITEMS.register("devil_chestplate",
 			() -> new ArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.CHEST,

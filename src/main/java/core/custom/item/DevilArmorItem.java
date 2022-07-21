@@ -1,8 +1,7 @@
-package core.custom;
+package core.custom.item;
 
 import com.google.common.collect.ImmutableMap;
 import core.init.ArmorMaterialInit;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -11,19 +10,42 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import software.bernie.geckolib3.core.IAnimatable;
+import software.bernie.geckolib3.core.PlayState;
+import software.bernie.geckolib3.core.builder.AnimationBuilder;
+import software.bernie.geckolib3.core.controller.AnimationController;
+import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
+import software.bernie.geckolib3.core.manager.AnimationData;
+import software.bernie.geckolib3.core.manager.AnimationFactory;
+import software.bernie.geckolib3.item.GeoArmorItem;
 
 import java.util.Map;
-import java.util.Random;
 
-public class ModArmorItem extends ArmorItem {
+public class DevilArmorItem extends GeoArmorItem implements IAnimatable {
+    private AnimationFactory factory = new AnimationFactory(this);
+
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ArmorMaterialInit.IRIDIUM,
-                            new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0)).build();
+                    .put(ArmorMaterialInit.DEVIL, new MobEffectInstance(MobEffects.LUCK, 200, 1)).build();
 
-
-    public ModArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
+    public DevilArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);
+    }
+
+    @Override
+    public void registerControllers(AnimationData data) {
+        data.addAnimationController(new AnimationController<DevilArmorItem>(this, "controller",
+                20, this::predicate));
+    }
+
+    @Override
+    public AnimationFactory getFactory() {
+        return this.factory;
+    }
+
+    private <P extends IAnimatable> PlayState predicate(AnimationEvent<P> event) {
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", true));
+        return PlayState.CONTINUE;
     }
 
     @Override
@@ -55,8 +77,8 @@ public class ModArmorItem extends ArmorItem {
                     mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier()));
 
             //if(new Random().nextFloat() > 0.6f) { // 40% of damaging the armor! Possibly!
-                //player.getInventory().hurtArmor(DamageSource.MAGIC, 1f, new int[]{0, 1, 2, 3});
-           // }
+            //    player.getInventory().hurtArmor(DamageSource.MAGIC, 1f, new int[]{0, 1, 2, 3});
+            //}
         }
     }
 
