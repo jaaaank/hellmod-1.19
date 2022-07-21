@@ -133,9 +133,6 @@ public final class ItemInit {
 	public static final RegistryObject<ArmorItem> DEVIL_HELMET = ITEMS.register("devil_helmet",
 			() -> new DevilArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.HEAD,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
-	public static final RegistryObject<ArmorItem> BLOOD_DEVIL_HELMET = ITEMS.register("blood_devil_helmet",
-			() -> new DevilArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.HEAD,
-					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 	public static final RegistryObject<ArmorItem> DEVIL_CHESTPLATE = ITEMS.register("devil_chestplate",
 			() -> new DevilArmorItem(ArmorMaterialInit.DEVIL, EquipmentSlot.CHEST,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
