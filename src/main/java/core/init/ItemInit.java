@@ -164,6 +164,8 @@ public final class ItemInit {
 			() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 	public static final RegistryObject<SwordItem> CHAINSAW_BLADE = ITEMS.register("chainsaw_blade",
 			() -> new SwordItem(Tiers.IRON, 4, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+	public static final RegistryObject<SwordItem> DEVIL_HORN = ITEMS.register("devil_horn",
+			() -> new SwordItem(Tiers.IRON, -1, -0.5f, new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 	public static final RegistryObject<Item> CHAINSAW_HANDLE = ITEMS.register("chainsaw_handle",
 			() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 	public static final RegistryObject<Item> CHAINSAW_ENGINE = ITEMS.register("chainsaw_engine",

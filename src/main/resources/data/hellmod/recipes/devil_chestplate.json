@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "SUS",
+    "LOL"
+  ],
+  "key": {
+    "X": {
+      "item": "hellmod:devil_horn"
+    },
+    "S": {
+      "item": "hellmod:reaper_bone"
+    },
+    "U": {
+      "item": "hellmod:devil_heart"
+    },
+    "L": {
+      "item": "hellmod:crystallized_devil_blood_block"
+    },
+    "O": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "hellmod:devil_helmet",
+    "count": 1
+  }
+}

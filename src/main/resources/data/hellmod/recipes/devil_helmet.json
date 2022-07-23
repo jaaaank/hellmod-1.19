@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    "SUS",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "hellmod:crystallized_devil_blood"
+    },
+    "I": {
+      "item": "hellmod:devil_horn"
+    },
+    "S": {
+      "item": "hellmod:chaotic_eye"
+    },
+    "U": {
+      "item": "hellmod:iridium_ingot"
+    }
+  },
+  "result": {
+    "item": "hellmod:devil_helmet",
+    "count": 1
+  }
+}
