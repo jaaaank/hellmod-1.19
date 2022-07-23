@@ -13,7 +13,7 @@ public class DevilArmorRenderer extends GeoArmorRenderer<DevilArmorItem> {
         this.leftArmBone = "armorLeftArm";
         this.rightLegBone = "armorRightLeg";
         this.leftLegBone = "armorLeftLeg";
-        this.rightBootBone = "armorLeftBoot";
-        this.leftBootBone = "armorRightBoot";
+        this.rightBootBone = "armorRightBoot";
+        this.leftBootBone = "armorLeftBoot";
     }
 }

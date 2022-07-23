@@ -1,7 +1,6 @@
 {
 	"replace": false,
 	"values": [
-		"hellmod:iridium_ore",
 		"hellmod:iridium_block",
 		"hellmod:raw_iridium_block"
 	]
