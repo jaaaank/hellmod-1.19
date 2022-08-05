@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P P",
+    "I I",
+    "S S"
+  ],
+  "key": {
+    "I": {
+      "item": "hellmod:iridium_ingot"
+    },
+    "P": {
+      "item": "hellmod:coagulated_devil_blood"
+    },
+    "S": {
+      "item": "hellmod:crystallized_devil_blood_block"
+    }
+  },
+  "result": {
+    "item": "hellmod:devil_leggings",
+    "count": 1
+  }
+}
