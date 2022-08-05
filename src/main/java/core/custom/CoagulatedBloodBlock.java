@@ -1,8 +1,5 @@
 package core.custom;
 
-import core.init.BlockInit;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
@@ -15,7 +12,6 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HalfTransparentBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -40,9 +36,6 @@ public class CoagulatedBloodBlock extends HalfTransparentBlock {
 	      super(p_53985_);
 
 	   }
-	   public static void fixBlockRenderLayers() {
-	        ItemBlockRenderTypes.setRenderLayer(BlockInit.COAGULATED_DEVIL_BLOOD_BLOCK.get(), RenderType.translucent());
-	    }
 	   private static boolean doesEntityDoHoneyBlockSlideEffects(Entity p_54013_) {
 	      return p_54013_ instanceof LivingEntity || p_54013_ instanceof AbstractMinecart || p_54013_ instanceof PrimedTnt || p_54013_ instanceof Boat;
 	   }
