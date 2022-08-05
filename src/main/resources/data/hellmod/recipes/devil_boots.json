@@ -6,10 +6,10 @@
     "S S"
   ],
   "key": {
-    "I": {
+    "P": {
       "item": "hellmod:iridium_ingot"
     },
-    "P": {
+    "I": {
       "item": "hellmod:coagulated_devil_blood"
     },
     "S": {
@@ -17,7 +17,7 @@
     }
   },
   "result": {
-    "item": "hellmod:devil_leggings",
+    "item": "hellmod:devil_boots",
     "count": 1
   }
 }
