@@ -258,7 +258,9 @@ public final class ItemInit {
 			() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).fireResistant()
 					.food(new FoodProperties.Builder().nutrition(8).saturationMod(8.0f).alwaysEat()
 							.effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1200, 0), 1.0f)
-							.effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1200, 0), 1.0f).build())));
+							.effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1200, 0), 1.0f)
+							.effect(() -> new MobEffectInstance(MobEffects.WITHER, 200, 0), 0.666f).build())));
+
 
 	public static final RegistryObject<Item> LESSER_GOLDEN_APPLE = ITEMS.register("lesser_golden_apple",
 			() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).fireResistant()
@@ -357,8 +359,7 @@ public final class ItemInit {
 					.food(new FoodProperties.Builder().nutrition(8).saturationMod(8.0f).alwaysEat()
 							.effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400, 0), 1.0f)
 							.effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1500, 1), 1.0f)
-							.effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1200, 0), 1.0f)
-							.effect(() -> new MobEffectInstance(MobEffects.WITHER, 200, 0), 0.666f).build())));
+							.effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1200, 0), 1.0f).build())));
 
 	
 	
@@ -434,8 +435,7 @@ public final class ItemInit {
 					.food(new FoodProperties.Builder().nutrition(8).saturationMod(8.0f).alwaysEat()
 							.effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 4800, 0), 1.0f)
 							.effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 3000, 2), 1.0f)
-							.effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2400, 1), 1.0f)
-							.effect(() -> new MobEffectInstance(MobEffects.WITHER, 400, 0), 0.666f).build())));
+							.effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2400, 1), 1.0f).build())));
 
 	public static final RegistryObject<GreaterRedstoneApple> GREATER_REDSTONE_APPLE = ITEMS.register("greater_redstone_apple",
 			() -> new GreaterRedstoneApple(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).fireResistant()
