@@ -1,7 +1,6 @@
 package com.jank.hellmod.client.renderer.model;
 
 import com.jank.hellmod.EnhancedHell;
-import com.jank.hellmod.common.entity.Bunker;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;

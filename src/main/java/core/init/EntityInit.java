@@ -3,7 +3,6 @@ package core.init;
 import com.jank.hellmod.EnhancedHell;
 
 import com.jank.hellmod.common.entity.BloodDevil;
-import com.jank.hellmod.common.entity.Bunker;
 import com.jank.hellmod.common.entity.ChaosDevil;
 import com.jank.hellmod.common.entity.Reaper;
 import net.minecraft.resources.ResourceLocation;
@@ -32,11 +31,6 @@ public class EntityInit {
 			() -> EntityType.Builder.of(ChaosDevil::new, MobCategory.MONSTER).fireImmune().sized(0.95f, 2.95f)
 				.canSpawnFarFromPlayer()
 				.build(new ResourceLocation(EnhancedHell.MODID, "chaos_devil").toString()));
-	
-	public static final RegistryObject<EntityType<Bunker>> BUNKER = ENTITIES.register("bunker",
-			() -> EntityType.Builder.of(Bunker::new, MobCategory.CREATURE).sized(0.65f, 0.8f)
-				.canSpawnFarFromPlayer()
-				.build(new ResourceLocation(EnhancedHell.MODID, "bunker").toString()));
 
 	public static void register(IEventBus eventBus) {
 		ENTITIES.register(eventBus);

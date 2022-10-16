@@ -1,7 +1,6 @@
 package com.jank.hellmod;
 
 import com.jank.hellmod.client.renderer.BloodDevilGeoRenderer;
-import com.jank.hellmod.client.renderer.BunkerGeoRenderer;
 import com.jank.hellmod.client.renderer.ChaosDevilGeoRenderer;
 import com.jank.hellmod.client.renderer.ReaperGeoRenderer;
 import com.mojang.logging.LogUtils;
@@ -64,10 +63,6 @@ public class EnhancedHell {
                     Heightmap.Types.WORLD_SURFACE,
                     Monster::checkMonsterSpawnRules);
 
-            SpawnPlacements.register(EntityInit.BUNKER.get(),
-                    SpawnPlacements.Type.ON_GROUND,
-                    Heightmap.Types.WORLD_SURFACE,
-                    Animal::checkAnimalSpawnRules);
         });
     }
 
@@ -78,7 +73,6 @@ public class EnhancedHell {
             EntityRenderers.register(EntityInit.BLOOD_DEVIL.get(), BloodDevilGeoRenderer::new);
             EntityRenderers.register(EntityInit.CHAOS_DEVIL.get(), ChaosDevilGeoRenderer::new);
             EntityRenderers.register(EntityInit.REAPER.get(), ReaperGeoRenderer::new);
-            EntityRenderers.register(EntityInit.BUNKER.get(), BunkerGeoRenderer::new);
         }
     }
 }

@@ -3,7 +3,6 @@ package com.jank.hellmod.client.event;
 import com.jank.hellmod.EnhancedHell;
 import com.jank.hellmod.client.armor.DevilArmorRenderer;
 import com.jank.hellmod.client.renderer.BloodDevilGeoRenderer;
-import com.jank.hellmod.client.renderer.BunkerGeoRenderer;
 import com.jank.hellmod.client.renderer.ChaosDevilGeoRenderer;
 import com.jank.hellmod.client.renderer.ReaperGeoRenderer;
 import core.custom.item.DevilArmorItem;
