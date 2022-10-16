@@ -50,17 +50,17 @@ public class EnhancedHell {
         event.enqueueWork(() ->{
             SpawnPlacements.register(EntityInit.BLOOD_DEVIL.get(),
                     SpawnPlacements.Type.ON_GROUND,
-                    Heightmap.Types.WORLD_SURFACE,
+                    Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                     Monster::checkMonsterSpawnRules);
 
             SpawnPlacements.register(EntityInit.CHAOS_DEVIL.get(),
                     SpawnPlacements.Type.ON_GROUND,
-                    Heightmap.Types.WORLD_SURFACE,
+                    Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                     Monster::checkMonsterSpawnRules);
 
             SpawnPlacements.register(EntityInit.REAPER.get(),
                     SpawnPlacements.Type.ON_GROUND,
-                    Heightmap.Types.WORLD_SURFACE,
+                    Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                     Monster::checkMonsterSpawnRules);
 
         });
