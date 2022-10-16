@@ -1,9 +1,12 @@
 {
-  "type": "hellmod:entities",
-  "biomes": "#minecraft:is_warped",
-  "entity": {
+  "type": "forge:add_spawns",
+  "biomes":[
+    "minecraft:warped_forest",
+    "biomesoplenty:undergrowth"
+  ],
+  "spawners": {
     "type": "hellmod:chaos_devil",
-    "weight": 40,
+    "weight": 10,
     "minCount": 1,
     "maxCount": 1
   }
