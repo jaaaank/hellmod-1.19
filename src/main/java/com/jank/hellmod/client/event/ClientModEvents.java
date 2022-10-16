@@ -30,8 +30,6 @@ public final class ClientModEvents {
 		event.registerEntityRenderer(EntityInit.BLOOD_DEVIL.get(), BloodDevilGeoRenderer::new);
 		event.registerEntityRenderer(EntityInit.REAPER.get(), ReaperGeoRenderer::new);
 		event.registerEntityRenderer(EntityInit.CHAOS_DEVIL.get(), ChaosDevilGeoRenderer::new);
-		event.registerEntityRenderer(EntityInit.BUNKER.get(), BunkerGeoRenderer::new);
-
 
 	}
 	
