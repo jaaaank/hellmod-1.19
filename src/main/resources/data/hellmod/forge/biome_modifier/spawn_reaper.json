@@ -1,8 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes":[
-    "minecraft:soul_sand_valley"
-  ],
+  "biomes": "#forge:is_reaper",
   "spawners": {
     "type": "hellmod:reaper",
     "weight": 10,

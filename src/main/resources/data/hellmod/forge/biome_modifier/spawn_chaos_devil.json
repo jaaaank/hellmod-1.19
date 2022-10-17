@@ -1,8 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes":[
-    "minecraft:warped_forest"
-  ],
+  "biomes":"#is_chaos",
   "spawners": {
     "type": "hellmod:chaos_devil",
     "weight": 10,
