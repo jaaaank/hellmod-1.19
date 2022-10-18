@@ -23,7 +23,7 @@ public class EntityInit {
 				.build(new ResourceLocation(EnhancedHell.MODID, "reaper").toString()));
 	
 	public static final RegistryObject<EntityType<BloodDevil>> BLOOD_DEVIL = ENTITIES.register("blood_devil",
-			() -> EntityType.Builder.of(BloodDevil::new, MobCategory.MONSTER).fireImmune().sized(1.2f, 1.0f)
+			() -> EntityType.Builder.of(BloodDevil::new, MobCategory.MONSTER).fireImmune().sized(1.0f, 1.0f)
 				.canSpawnFarFromPlayer()
 				.build(new ResourceLocation(EnhancedHell.MODID, "blood_devil").toString()));
 	
