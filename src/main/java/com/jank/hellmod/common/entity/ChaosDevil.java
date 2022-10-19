@@ -1,22 +1,13 @@
 package com.jank.hellmod.common.entity;
 
-import java.util.Random;
-
 import com.jank.hellmod.EnhancedHell;
 import core.custom.DevilType;
 import core.init.SoundInit;
-import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -34,7 +25,6 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import software.bernie.geckolib3.core.AnimationState;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -116,17 +106,18 @@ public class ChaosDevil extends Monster implements IAnimatable {
 	}
 
 	private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-		if (!(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) {
+		if (event.isMoving()) {
 			event.getController().setAnimation(new AnimationBuilder().addAnimation("chaos_devil_walk", true));
 		}
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("chaos_devil_idle", true));
+
+		event.getController().setAnimation(new AnimationBuilder().addAnimation("chaos_devil_idle", true));
 		return PlayState.CONTINUE;
 	}
 
-	private PlayState attackPredicate(AnimationEvent animationEvent) {
-		if(this.swinging && animationEvent.getController().getAnimationState().equals(AnimationState.Stopped)){
-			animationEvent.getController().markNeedsReload();
-			animationEvent.getController().setAnimation(new AnimationBuilder().addAnimation("chaos_devil_attack", false));
+	private PlayState attackPredicate(AnimationEvent event) {
+		if(this.swinging && event.getController().getAnimationState().equals(AnimationState.Stopped)){
+			event.getController().markNeedsReload();
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("chaos_devil_attack", false));
 			this.swinging = false;
 		}
 		return PlayState.CONTINUE;
@@ -137,7 +128,7 @@ public class ChaosDevil extends Monster implements IAnimatable {
 	public void registerControllers(AnimationData data) {
 		data.addAnimationController(new AnimationController(this, "controller",
 				0, this::predicate));
-		data.addAnimationController(new AnimationController(this, "attackcontroller",
+		data.addAnimationController(new AnimationController(this, "attackController",
 				0, this::attackPredicate));
 	}
 
