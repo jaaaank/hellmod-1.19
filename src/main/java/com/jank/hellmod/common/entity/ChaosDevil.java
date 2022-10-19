@@ -35,6 +35,7 @@ import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
+import software.bernie.geckolib3.core.AnimationState;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
@@ -117,16 +118,27 @@ public class ChaosDevil extends Monster implements IAnimatable {
 	private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
 		if (!(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) {
 			event.getController().setAnimation(new AnimationBuilder().addAnimation("chaos_devil_walk", true));
-		} else {
+		}
 			event.getController().setAnimation(new AnimationBuilder().addAnimation("chaos_devil_idle", true));
+		return PlayState.CONTINUE;
+	}
+
+	private PlayState attackPredicate(AnimationEvent animationEvent) {
+		if(this.swinging && animationEvent.getController().getAnimationState().equals(AnimationState.Stopped)){
+			animationEvent.getController().markNeedsReload();
+			animationEvent.getController().setAnimation(new AnimationBuilder().addAnimation("chaos_devil_attack", false));
+			this.swinging = false;
 		}
 		return PlayState.CONTINUE;
 	}
+
 
 	@Override
 	public void registerControllers(AnimationData data) {
 		data.addAnimationController(new AnimationController(this, "controller",
 				0, this::predicate));
+		data.addAnimationController(new AnimationController(this, "attackcontroller",
+				0, this::attackPredicate));
 	}
 
 	@Override
