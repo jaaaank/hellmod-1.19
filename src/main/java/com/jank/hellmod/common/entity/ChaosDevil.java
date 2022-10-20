@@ -108,6 +108,7 @@ public class ChaosDevil extends Monster implements IAnimatable {
 	private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
 		if (event.isMoving()) {
 			event.getController().setAnimation(new AnimationBuilder().addAnimation("chaos_devil_walk", true));
+			return PlayState.CONTINUE;
 		}
 
 		event.getController().setAnimation(new AnimationBuilder().addAnimation("chaos_devil_idle", true));
@@ -115,14 +116,14 @@ public class ChaosDevil extends Monster implements IAnimatable {
 	}
 
 	private PlayState attackPredicate(AnimationEvent event) {
-		if(this.swinging && event.getController().getAnimationState().equals(AnimationState.Stopped)){
+		if(this.swinging && event.getController().getAnimationState().equals(AnimationState.Stopped)) {
 			event.getController().markNeedsReload();
 			event.getController().setAnimation(new AnimationBuilder().addAnimation("chaos_devil_attack", false));
 			this.swinging = false;
 		}
+
 		return PlayState.CONTINUE;
 	}
-
 
 	@Override
 	public void registerControllers(AnimationData data) {
@@ -131,9 +132,8 @@ public class ChaosDevil extends Monster implements IAnimatable {
 		data.addAnimationController(new AnimationController(this, "attackController",
 				0, this::attackPredicate));
 	}
-
 	@Override
 	public AnimationFactory getFactory() {
-		return this.factory;
+		return factory;
 	}
 }
