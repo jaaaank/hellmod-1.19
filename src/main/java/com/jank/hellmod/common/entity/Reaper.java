@@ -70,6 +70,12 @@ public class Reaper extends WitherSkeleton implements IAnimatable {
 				.add(Attributes.FOLLOW_RANGE, 25.0D).build();
 	}
 
+	protected void populateDefaultEquipmentSlots(RandomSource p_219154_, DifficultyInstance p_219155_) {
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ItemInit.SCYTHE.get()));
+	}
+	protected void populateDefaultEquipmentEnchantments(RandomSource p_219157_, DifficultyInstance p_219158_) {
+	}
+
 	@Override
 	protected void registerGoals() {
 		this.goalSelector.addGoal(8, new LookAtPlayerGoal(this, Player.class, 8.0F));

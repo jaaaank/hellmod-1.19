@@ -1,14 +1,13 @@
 package core.init;
 
 import com.jank.hellmod.EnhancedHell;
-import core.custom.ModArmorItem;
+import core.custom.item.IridiumArmorItem;
 import core.custom.item.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -69,7 +68,7 @@ public final class ItemInit {
 			() -> new AxeItem(ToolMaterialInit.DEVIL, 10, -3.1f,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).defaultDurability(1500).fireResistant()));
 	public static final RegistryObject<HoeItem> SCYTHE = ITEMS.register("scythe",
-			() -> new HoeItem(ToolMaterialInit.DEVIL, 6, -2.7f,
+			() -> new HoeItem(ToolMaterialInit.DEVIL, 5, -2.7f,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).defaultDurability(1500).fireResistant()));
 	public static final RegistryObject<ShovelItem> PITCHFORK = ITEMS.register("pitchfork",
 			() -> new ShovelItem(ToolMaterialInit.DEVIL, 8, -3.0f,
@@ -104,7 +103,7 @@ public final class ItemInit {
 
 			// IRIDIUM ARMOR
 	public static final RegistryObject<ArmorItem> IRIDIUM_HELMET = ITEMS.register("iridium_helmet",
-			() -> new ModArmorItem(ArmorMaterialInit.IRIDIUM, EquipmentSlot.HEAD,
+			() -> new IridiumArmorItem(ArmorMaterialInit.IRIDIUM, EquipmentSlot.HEAD,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
 	public static final RegistryObject<ArmorItem> IRIDIUM_CHESTPLATE = ITEMS.register("iridium_chestplate",
 			() -> new ArmorItem(ArmorMaterialInit.IRIDIUM, EquipmentSlot.CHEST,

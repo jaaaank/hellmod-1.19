@@ -14,7 +14,7 @@ public final class ArmorMaterialInit {
 	
 	public static final ArmorMaterial OBSIDIAN = new BaseArmorMaterial(0, new int [] {30, 70, 60, 50}, 
 			new int [] {2, 6, 6, 3}, .25f, 1.0f, EnhancedHell.MODID + ":obsidian",
-			SoundEvents.ARMOR_EQUIP_GENERIC, () -> Ingredient.of(ItemInit.IRIDIUM_INGOT.get()));
+			SoundEvents.ARMOR_EQUIP_GENERIC, () -> Ingredient.of(Items.BARRIER));
 
 	public static final ArmorMaterial DRESS = new BaseArmorMaterial(5, new int [] {55, 80, 75, 65}, 
 			new int [] {1, 2, 2, 1}, 0.0f, 0.0f, EnhancedHell.MODID + ":dress", 

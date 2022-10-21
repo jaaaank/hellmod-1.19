@@ -1,28 +1,34 @@
-package core.custom;
+package core.custom.item;
 
 import com.google.common.collect.ImmutableMap;
 import core.init.ArmorMaterialInit;
-import net.minecraft.world.damagesource.DamageSource;
+import core.init.ItemInit;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.event.entity.living.LivingEvent;
+import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 
+import javax.annotation.Nullable;
 import java.util.Map;
-import java.util.Random;
 
-public class ModArmorItem extends ArmorItem {
+public class ObsidianArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ArmorMaterialInit.IRIDIUM,
-                            new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0)).build();
+                    .put(ArmorMaterialInit.OBSIDIAN,
+                            new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 3)).build();
 
 
-    public ModArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
+    public ObsidianArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);
     }
 
@@ -45,7 +51,6 @@ public class ModArmorItem extends ArmorItem {
             }
         }
     }
-
     private void addStatusEffectForMaterial(Player player, ArmorMaterial mapArmorMaterial,
                                             MobEffectInstance mapStatusEffect) {
         boolean hasPlayerEffect = player.hasEffect(mapStatusEffect.getEffect());
@@ -53,10 +58,6 @@ public class ModArmorItem extends ArmorItem {
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
             player.addEffect(new MobEffectInstance(mapStatusEffect.getEffect(),
                     mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier()));
-
-            //if(new Random().nextFloat() > 0.6f) { // 40% of damaging the armor! Possibly!
-                //player.getInventory().hurtArmor(DamageSource.MAGIC, 1f, new int[]{0, 1, 2, 3});
-           // }
         }
     }
 
@@ -69,6 +70,7 @@ public class ModArmorItem extends ArmorItem {
         return !helmet.isEmpty() && !breastplate.isEmpty()
                 && !leggings.isEmpty() && !boots.isEmpty();
     }
+
 
     private boolean hasCorrectArmorOn(ArmorMaterial material, Player player) {
         for (ItemStack armorStack: player.getInventory().armor) {
@@ -85,4 +87,6 @@ public class ModArmorItem extends ArmorItem {
         return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
                 leggings.getMaterial() == material && boots.getMaterial() == material;
     }
+
+
 }
