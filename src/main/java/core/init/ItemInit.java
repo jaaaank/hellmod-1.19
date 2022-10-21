@@ -145,16 +145,16 @@ public final class ItemInit {
 	
 			// OBSIDIAN ARMOR
 	public static final RegistryObject<ArmorItem> OBSIDIAN_HELMET = ITEMS.register("obsidian_helmet",
-			() -> new ArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentSlot.HEAD,
+			() -> new ObsidianArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentSlot.HEAD,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant().setNoRepair()));
 	public static final RegistryObject<ArmorItem> OBSIDIAN_CHESTPLATE = ITEMS.register("obsidian_chestplate",
-			() -> new ArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentSlot.CHEST,
+			() -> new ObsidianArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentSlot.CHEST,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant().setNoRepair()));
 	public static final RegistryObject<ArmorItem> OBSIDIAN_LEGGINGS = ITEMS.register("obsidian_leggings",
-			() -> new ArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentSlot.LEGS,
+			() -> new ObsidianArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentSlot.LEGS,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant().setNoRepair()));
 	public static final RegistryObject<ArmorItem> OBSIDIAN_BOOTS = ITEMS.register("obsidian_boots",
-			() -> new ArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentSlot.FEET,
+			() -> new ObsidianArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentSlot.FEET,
 					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant().setNoRepair()));
 	
 
