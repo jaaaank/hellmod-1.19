@@ -1,3 +1,4 @@
+
 package core.world.feature;
 
 import core.init.BlockInit;
@@ -34,7 +35,7 @@ public class ModConfiguredFeatures {
 
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> RUST_ORE = FeatureUtils.register("rust_ore",
             Feature.ORE, new OreConfiguration(NETHER_RUST_ORE, 10));
-                                                                              //9 IS MAX VEIN SIZE
+    //9 IS MAX VEIN SIZE
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> IRIDIUM_ORE = FeatureUtils.register("iridium_ore",
             Feature.ORE, new OreConfiguration(NETHER_IRIDIUM_ORE, 4));
 

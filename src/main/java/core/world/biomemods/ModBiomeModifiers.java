@@ -22,7 +22,11 @@ public class ModBiomeModifiers {
                     PlacedFeature.CODEC.fieldOf("feature").forGetter(ModOreBiomeModifier::feature)
             ).apply(builder, ModOreBiomeModifier::new)));
 
-
+    public static RegistryObject<Codec<ModEntityBiomeModifier>> ENTITY_MODIFIER = BIOME_MODIFIERS.register("entities", () ->
+            RecordCodecBuilder.create(builder -> builder.group(
+                    Biome.LIST_CODEC.fieldOf("biomes").forGetter(ModEntityBiomeModifier::biomes),
+                    MobSpawnSettings.SpawnerData.CODEC.fieldOf("entity").forGetter(ModEntityBiomeModifier::spawnerData)
+            ).apply(builder, ModEntityBiomeModifier::new)));
 
     public static void register(IEventBus eventBus){
         BIOME_MODIFIERS.register(eventBus);

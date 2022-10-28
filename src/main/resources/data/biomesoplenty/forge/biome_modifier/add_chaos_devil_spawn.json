@@ -1,0 +1,10 @@
+{
+  "type": "hellmod:entities",
+  "biomes": "#biomesoplenty:is_warped",
+  "entity": {
+    "type": "hellmod:chaos_devil",
+    "weight": 40,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}
